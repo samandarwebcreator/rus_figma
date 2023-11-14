@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Tailwind Hometask</title>
+  </head>
+  <body>
+    <header>
+      <div
+        class="container xl m-auto px-10 py-5 flex max-w-screen-xl items-center justify-center"
+      >
+        <div
+          class="flex max-w-[768px] items-center gap-7 justify-center sm:justify-around"
+        >
+          <a
+            class="flex max-w-[768px] items-center sm:gap-[390px]"
+            href="index.html"
+            ><img
+              class="ml-[10px]"
+              src="../icons/website-logo.svg"
+              alt="website logo"
+              width="106"
+              height="30"
+            />
+            <p class="sm:block lg:hidden font-bold cursor-pointer">☰</p>
+          </a>
+
+          <p class="max-w-xs font-light sm:hidden lg:block">
+            Оптовые поставки металлопроката по России и странам СНГ
+          </p>
+        </div>
+
+        <nav class="sm:hidden lg:block">
+          <ul class="flex gap-4">
+            <li class="header__list">
+              <a
+                class="text-sm border-b-[2px] border-transparent hover:border-green-600 transition duration-500 ease-out hover:ease-in hover:border-b-[2px] hover:border-solid"
+                href="#"
+                >О компании</a
+              >
+            </li>
+            <li class="header__list">
+              <a
+                class="text-sm border-b-[2px] border-transparent hover:border-green-600 transition duration-500 ease-out hover:ease-in hover:border-b-[2px] hover:border-solid"
+                href="#"
+                >Прайс-листы</a
+              >
+            </li>
+            <li class="header__list">
+              <a
+                class="text-sm border-b-[2px] border-transparent hover:border-green-600 transition duration-500 ease-out hover:ease-in hover:border-b-[2px] hover:border-solid"
+                href="#"
+                >Производство</a
+              >
+            </li>
+            <li class="header__list">
+              <a
+                class="text-sm border-b-[2px] border-transparent hover:border-green-600 transition duration-500 ease-out hover:ease-in hover:border-b-[2px] hover:border-solid"
+                href="#"
+                >Закупки</a
+              >
+            </li>
+            <li class="header__list">
+              <a
+                class="text-sm border-b-[2px] border-transparent hover:border-green-600 transition duration-500 ease-out hover:ease-in hover:border-b-[2px] hover:border-solid"
+                href="#"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="ml-12 flex flex-col items-end sm:hidden lg:block">
+          <h3 class="text-lg font-bold">&#128222; 8 800 999 79 77</h3>
+          <p class="border-b-[2px] border-dashed border-black ml-[40px]">
+            Заказать звонок
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex container xl max-w-screen-xl px-10 py-0 m-auto sm:justify-center mt-[22px] px-[10px] sm:gap-[80px] lg:gap-[30px] sm:items-center pb-[30px]"
+      >
+        <div class="flex items-center gap-[30px]">
+          <input
+            class="placeholder:text-white outline-transparent rounded-md-[20px] px-2 py-2 border-transparent border-solid bg-[#387C43;] text-sm font-white-500 placeholder:uppercase"
+            type="text"
+            placeholder="Каталог &nbsp; &#9207;"
+          />
+
+          <input
+            class="py-2 px-10 pl-[30px] pr-[200px] placeholder:text-black outline-[#dfeae4] block sm:hidden lg:block"
+            type="text"
+            placeholder=" 🔍   Поиск по каталогу"
+          />
+        </div>
+
+        <div
+          class="lg:flex items-center justify-between lg:gap-[10px] max-w-[254px] lg:ml-[30px] sm:hidden"
+        >
+          <img
+            src="../icons/header-location.svg"
+            alt="location"
+            width="12"
+            height="12"
+          />
+          <div class="">
+            <p class="">Свердл. обл., г. Первоуральск</p>
+            <p class="">Пн-Вс 8:00 - 21:00</p>
+          </div>
+        </div>
+
+        <div
+          class="lg:flex lg:gap-[10px] items-center sm:justify-center gap-[7px] sm:flex sm:gap-[90px]"
+        >
+          <p class="lg:hidden sm:block">🔍</p>
+
+          <img
+            src="../icons/header-user.svg"
+            alt="user icon"
+            width="26"
+            height="26"
+          />
+          <img
+            class="sm:hidden lg:block"
+            src="../icons/Line.svg"
+            alt="arrow down"
+            width="11"
+            height="5"
+          />
+        </div>
+
+        <div
+          class="relative w-[100px] h-[50px] flex items-center sm:pl-[20px] sm:w-[50px]"
+        >
+          <img
+            src="../icons/shopping-cart.svg"
+            alt="shopping packet"
+            width="26"
+            height="26"
+          />
+          <p
+            class="px-4 py-2 bg-[#387C43] absolute text-white rounded-[50%] top-[-16px] left-[30px] sm:hidden lg:block"
+          >
+            8
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div
+          class="bg-cover bg-no-repeat bg-center"
+          style="background-image: url(../images/hero-bg.png)"
+        >
+          <div
+            class="container xl lg:max-w-screen-xl m-auto sm:max-w-screen-sm sm:m-auto lg:px-[100px] sm:px-[55px] lg:px-[40px] lg:max-w-[1172px] sm:max-w-[640px] lg:flex lg:items-start sm:flex-col lg:flex-col lg:pb-[50px] sm:pb-[30px]"
+          >
+            <div
+              class="lg:flex items-start lg:flex-col lg:pt-[61px] sm:pt-[31px] lg:max-w-[470px] sm:max-w-[270px]"
+            >
+              <h1
+                class="text-white lg:font-bold lg:text-[40px] sm:text-[20px] sm:mb-[20px] lg:mb-[32px] lg:pt-[60px]"
+              >
+                Надёжный поставщик Выгодный партнёр
+              </h1>
+              <p
+                class="lg:max-w-[269px] sm:max-w-[209px] text-white lg:mb-[32px] sm:mb-[37px] sm:text-[12px] lg:text-[16px]"
+              >
+                Оптовая продажа металлопроката от производителя
+              </p>
+              <a
+                class="uppercase lg:text-[14px] sm:text-[12px] text-white font-medium lg:mb-[79px] sm:mb-[62px] bg-[#387C43] rounded-sm lg:py-[15px] lg:px-[26px] sm:py-[16px] sm:px-[34px] transition ease-in-out delay-150 hover:text-[#387C43] hover:bg-[#cccccc] border-transparent hover:border-[#387C43] border-2 hover:border-2"
+                href="#"
+                >написать нам</a
+              >
+            </div>
+
+            <div
+              class="lg:flex lg:items-center lg:gap-[96px] sm:gap-[19px] lg:max-w-[580px] sm:max-w-[270px] sm:mt-[50px] sm:flex"
+            >
+              <div class="lg:max-w-[143px] sm:max-w-[100px]">
+                <h3
+                  class="lg:font-black text-white lg:text-[24px] sm:text-[18px] lg:pb-[15px] sm:pb-[15px] border-b-[3px] border-[#F3AA3C] lg:text-[24px]"
+                >
+                  27000 +
+                </h3>
+                <p class="text-white lg:text-[14px] sm:text-[12px] mt-[15px]">
+                  товарных позиций
+                </p>
+              </div>
+              <div class="lg:max-w-[143px] sm:max-w-[100px]">
+                <h3
+                  class="lg:font-black text-white lg:text-[24px] sm:text-[18px] lg:pb-[15px] sm:pb-[15px] border-b-[3px] border-[#F3AA3C] lg:text-[24px]"
+                >
+                  15 лет
+                </h3>
+                <p class="text-white lg:text-[14px] sm:text-[12px] mt-[15px]">
+                  работы в отрасли
+                </p>
+              </div>
+              <div class="lg:max-w-[143px] sm:max-w-[125px]">
+                <h3
+                  class="lg:font-black text-white lg:text-[24px] sm:text-[18px] lg:pb-[15px] sm:pb-[15px] border-b-[3px] border-[#F3AA3C] lg:text-[24px]"
+                >
+                  2200 +
+                </h3>
+                <p class="text-white lg:text-[14px] sm:text-[12px] mt-[15px]">
+                  постоянных клиентов
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
